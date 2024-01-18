@@ -83,6 +83,26 @@ const moon = new THREE.Mesh(
 
 scene.add(moon)
 
+//Both do the same thing, three.js allows = or setter function
+moon.position.z = 30;
+moon.position.setX(-10);
+
+function moveCamera() {
+  const t = document.body.getBoundingClientRect().top;
+  moon.rotation.x += 0.05;
+  moon.rotation.y += 0.075;
+  moon.rotation.z += 0.05;
+
+  avatar.rotation.y += 0.01;
+  avatar.rotation.x += 0.01;
+
+  camera.position.z = t * -0.01;
+  camera.position.x = t * -0.0002;
+  camera.position.y = t * -0.0002;
+}
+
+document.body.onscroll = moveCamera
+
 function animate() {
   requestAnimationFrame(animate);
 
