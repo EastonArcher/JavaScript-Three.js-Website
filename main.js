@@ -46,32 +46,32 @@ scene.add(pointLight, ambientLight);
   //const gridHelper = new THREE.GridHelper(200, 50)
   //scene.add(lightHelper, gridHelper)
 
-const controls = new OrbitControls(camera, renderer.domElement);
+//const controls = new OrbitControls(camera, renderer.domElement);
 
 function addBall(){
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-  const material = new THREE.MeshStandardMaterial( { color: 0xffffff })
-  const ball = new THREE.Mesh( geometry, material)
+  const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+  const ball = new THREE.Mesh(geometry, material);
 
-  const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread( 100 ) );
+  const [x, y, z] = Array(3)
+    .fill()
+    .map(() => THREE.MathUtils.randFloatSpread(100));
 
   ball.position.set(x, y, z);
-  scene.add(ball)
+  scene.add(ball);
 }
 
 Array(200).fill().forEach(addBall)
 
+
+//Background
 const backgroundTexture = new THREE.TextureLoader().load('space.jpg');
 scene.background = backgroundTexture;
 
 //Avatar 
-
 const avatarTexture = new THREE.TextureLoader().load('easton.jpg');
 
-const avatar = new THREE.Mesh(
-  new THREE.BoxGeometry(3, 3, 3),
-  new THREE.MeshBasicMaterial( { map: avatarTexture } )
-);
+const avatar = new THREE.Mesh(new THREE.BoxGeometry(3, 3, 3), new THREE.MeshBasicMaterial({ map: avatarTexture }));
 
 scene.add(avatar);
 
@@ -93,6 +93,11 @@ scene.add(moon)
 moon.position.z = 30;
 moon.position.setX(-10);
 
+avatar.position.x = -5;
+avatar.position.x = 2;
+
+
+//Scroll Animation
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
   moon.rotation.x += 0.05;
@@ -108,7 +113,10 @@ function moveCamera() {
 }
 
 document.body.onscroll = moveCamera
+moveCamera();
 
+
+//Animation Loop
 function animate() {
   requestAnimationFrame(animate);
 
@@ -116,7 +124,9 @@ function animate() {
   torus.rotation.y += 0.005;
   torus.rotation.z += 0.01;
 
-  controls.update();
+  moon.rotation.x += 0.005;
+
+  //controls.update();
 
   renderer.render(scene, camera)
 }
