@@ -2,6 +2,8 @@ import './style.css'
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
+
+//Setup
 const scene = new THREE.Scene()
 
 //Perspective camera to mimic what humans would see
@@ -15,23 +17,29 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(30);
+camera.position.setX(-3);
 
 //render == draw 
 renderer.render(scene, camera);
 
-const geometry = new THREE.TorusGeometry(10, 3, 16, 100)
-const material = new THREE.MeshStandardMaterial( { color : 0xFF6347 } );
+
+//Torus
+const geometry = new THREE.TorusGeometry(10, 3, 16, 100);
+const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
+
 //Combines geometry with material, actual thing being added to the scene
 const torus = new THREE.Mesh(geometry, material);
 
 scene.add(torus)
 
-const pointLight = new THREE.PointLight(0xffffff)
-pointLight.position.set(5, 5, 5)
+//Lights
+const pointLight = new THREE.PointLight(0xffffff);
+pointLight.position.set(5, 5, 5);
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
-scene.add(pointLight, ambientLight)
+scene.add(pointLight, ambientLight);
 
+//Helpers
 //Shows the position of a point light
   //const lightHelper = new THREE.PointLightHelper(pointLight)
 //Draws 2D grid along the scene
