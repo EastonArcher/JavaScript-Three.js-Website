@@ -1,7 +1,5 @@
 import './style.css'
-
 import * as THREE from 'three';
-
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 const scene = new THREE.Scene()
@@ -35,10 +33,10 @@ const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight)
 
 //Shows the position of a point light
-const lightHelper = new THREE.PointLightHelper(pointLight)
+  //const lightHelper = new THREE.PointLightHelper(pointLight)
 //Draws 2D grid along the scene
-const gridHelper = new THREE.GridHelper(200, 50)
-scene.add(lightHelper, gridHelper)
+  //const gridHelper = new THREE.GridHelper(200, 50)
+  //scene.add(lightHelper, gridHelper)
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
