@@ -10,4 +10,6 @@ npm run dev
 ```
 
 ## Technologies Used
-This project utilizes Vite and Three.js to make an interactive 3D website 
+**Vite:** The project is built on Vite, a fast development framework that enhances the development experience.
+
+**Three.js:** Leveraging Three.js for creating engaging and visually appealing 3D graphics in the background.
