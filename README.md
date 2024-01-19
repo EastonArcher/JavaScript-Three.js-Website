@@ -8,6 +8,7 @@ git clone <this-repo>
 npm install
 npm run dev
 ```
+Launch a local development server by following these steps. Visit http://localhost:3000 in your browser to explore the interactive 3D website.
 
 ## Technologies Used
 **- Vite:** This project is built with Vite, a fast development framework that enhances the development experience.<br>
