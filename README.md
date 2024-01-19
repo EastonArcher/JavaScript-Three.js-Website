@@ -15,3 +15,8 @@ npm run dev
 **Three.js:** Utilized Three.js for creating engaging and visually appealing 3D graphics in the background.
 
 ## Features
+Immersive 3D Experience: Utilizes Three.js to craft an immersive and dynamic 3D environment for an engaging user experience.
+
+Interactive Elements: Incorporates interactive elements to make the portfolio stand out and capture the user's attention.
+
+Vite for Efficiency: Takes advantage of Vite's efficiency for quick development and optimal bundling.
