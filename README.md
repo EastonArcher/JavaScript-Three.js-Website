@@ -10,6 +10,6 @@ npm run dev
 ```
 
 ## Technologies Used
-**Vite:** The project is built on Vite, a fast development framework that enhances the development experience.
+**Vite:** This project is built with Vite, a fast development framework that enhances the development experience.
 
-**Three.js:** Leveraging Three.js for creating engaging and visually appealing 3D graphics in the background.
+**Three.js:** Utilized Three.js for creating engaging and visually appealing 3D graphics in the background.
