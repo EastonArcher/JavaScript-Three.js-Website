@@ -18,5 +18,4 @@ Launch a local development server by following these steps. Visit http://localho
 
 **- Immersive 3D Experience:** Utilizes Three.js to craft an immersive and dynamic 3D environment for an engaging user experience.<br>
 **- Interactive Elements:** Incorporates interactive elements to make the portfolio stand out and capture the user's attention.<br>
-**- Vite for Efficiency:** Takes advantage of Vite's efficiency for quick development and optimal bundling.
-
+**- Vite for Efficiency:** Takes advantage of Vite's efficiency for quick development and optimal bundling.<br>
