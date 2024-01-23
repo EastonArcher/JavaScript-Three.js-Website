@@ -1,5 +1,4 @@
 ## 3D Portfolio Website
-
 This project was made in order to create a distinctive, creative, and interactive personal portfolio website by harnessing the power of Three.js, a JavaScript library for building immersive 3D graphics.
 
 ## Installation
@@ -15,7 +14,6 @@ Launch a local development server by following these steps. Visit http://localho
 **- Three.js:** Utilized Three.js for creating engaging and visually appealing 3D graphics in the background.
 
 ## Features
-
 **- Immersive 3D Experience:** Utilizes Three.js to craft an immersive and dynamic 3D environment for an engaging user experience.<br>
 **- Interactive Elements:** Incorporates interactive elements to make the portfolio stand out and capture the user's attention.<br>
 **- Vite for Efficiency:** Takes advantage of Vite's efficiency for quick development and optimal bundling.<br>
