@@ -10,8 +10,8 @@ npm run dev
 Launch a local development server by following these steps. Visit http://localhost:3000 in your browser to explore the interactive 3D website.
 
 ## Technologies Used
-**- Vite:** This project is built with Vite, a fast development framework that enhances the development experience.<br>
-**- Three.js:** Utilized Three.js for creating engaging and visually appealing 3D graphics in the background.
+** *  Vite:** This project is built with Vite, a fast development framework that enhances the development experience.<br>
+** *  Three.js:** Utilized Three.js for creating engaging and visually appealing 3D graphics in the background.
 
 ## Features
 **- Immersive 3D Experience:** Utilizes Three.js to craft an immersive and dynamic 3D environment for an engaging user experience.<br>
