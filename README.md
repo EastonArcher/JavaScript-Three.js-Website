@@ -1,5 +1,5 @@
 ## 3D Portfolio Website
-This project was made in order to create a distinctive, creative, and interactive personal portfolio website by harnessing the power of Three.js, a JavaScript library for building immersive 3D graphics.
+This project was made in order to create a distinctive, creative, and interactive personal portfolio website via Three.js, a JavaScript library for building immersive 3D graphics.
 
 ## Installation
 ```
